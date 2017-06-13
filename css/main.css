@@ -418,11 +418,25 @@ template {
   text-transform: uppercase;
   font-size: 1.3em;
 }
+@media only screen and (min-width: 962px) {
+  .header .navbar h4 {
+    font-size: 2em;
+  }
+}
 .header .navbar i {
   font-size: 2em;
 }
 .header .navbar .logo img {
   color: white;
+}
+@media only screen and (min-width: 962px) {
+  .header .navbar a {
+    color: white;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+  }
 }
 .header .hero-text i {
   font-size: 6em;
@@ -444,6 +458,11 @@ template {
     font-size: 1.2em;
   }
 }
+@media only screen and (min-width: 962px) {
+  .header .hero-text h2 {
+    font-size: 1.5em;
+  }
+}
 .header .hero-text h1 {
   font-family: 'Spectral', serif;
   text-transform: uppercase;
@@ -454,6 +473,18 @@ template {
   .header .hero-text h1 {
     font-size: 4.5em;
   }
+}
+@media only screen and (min-width: 962px) {
+  .header .hero-text h1 {
+    font-size: 7em;
+  }
+}
+.header .hero-text button {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 
 .body-container .img-card h3 {
@@ -538,9 +569,32 @@ template {
 .header .navbar .logo h4 {
   padding-left: 10px;
 }
+@media only screen and (min-width: 962px) {
+  .header .navbar .logo img {
+    height: 50px;
+    width: 50px;
+  }
+}
 @media only screen and (min-width: 760px) {
   .header .navbar {
     padding-top: 60px;
+  }
+}
+@media only screen and (min-width: 962px) {
+  .header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header .navbar ul {
+    display: inline;
+  }
+  .header .navbar ul li {
+    display: inline;
+    padding: 0 10px;
+  }
+  .header .navbar i {
+    display: none;
   }
 }
 .header .hero-text {
@@ -559,6 +613,15 @@ template {
 .header .hero-text button {
   display: none;
 }
+@media only screen and (min-width: 962px) {
+  .header .hero-text button {
+    display: block;
+    background-color: #dc7725;
+    border: none;
+    padding: 20px;
+    margin-top: 20%;
+  }
+}
 .header .hero-text i {
   margin-bottom: 20px;
   -webkit-filter: opacity(0.5);
@@ -567,19 +630,24 @@ template {
 .header .hero-text hr {
   color: white;
   border: 2px solid white;
-  width: 65%;
+  width: 250px;
   margin: 10px 0;
-}
-@media only screen and (min-width: 760px) {
-  .header .hero-text hr {
-    width: 40%;
-  }
 }
 .header .hero-text h1 {
   margin: 0;
 }
+@media only screen and (min-width: 962px) {
+  .header .hero-text img {
+    margin-top: 75px;
+  }
+}
 .header .navbar2 {
   display: none;
+}
+@media only screen and (min-width: 962px) {
+  .header {
+    height: 100vh;
+  }
 }
 
 .body-container {

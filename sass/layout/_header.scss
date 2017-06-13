@@ -23,17 +23,40 @@
       h4 {
         padding-left: 10px;
       }
-    }
+      @media #{$breakpoint-large} {
+        img {
+          @include size(50px);
+        }
+      }
+    } //end logo
+
     @media #{$breakpoint-medium} {
       padding-top: 60px;
     }
-  }
+
+    @media #{$breakpoint-large} {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      ul {
+        display: inline;
+        li {
+          display: inline;
+          padding: 0 10px;
+        }
+      }
+      i {
+        display: none;
+      }
+    }
+  } //end navbar
 
   .hero-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     img {
       @include size(60px);
       -webkit-filter: opacity(0.8);
@@ -42,6 +65,13 @@
     }
     button {
       display: none;
+      @media #{$breakpoint-large} {
+        display: block;
+        background-color: $orange;
+        border: none;
+        padding: 20px;
+        margin-top: 20%;
+      }
     }
     i {
       margin-bottom: 20px;
@@ -51,19 +81,24 @@
     hr {
       color: white;
       border: 2px solid white;
-      width: 65%;
+      width: 250px;
       margin: 10px 0;
-      @media #{$breakpoint-medium} {
-        width: 40%;
-      }
     }
     h1 {
       margin: 0;
     }
-
-  }
+    img {
+      @media #{$breakpoint-large} {
+        margin-top: 75px;
+      }
+    }
+  } //end hero-text
 
   .navbar2 {
     display: none;
   }
-}
+
+  @media #{$breakpoint-large} {
+    height: 100vh;
+  }
+} //end header

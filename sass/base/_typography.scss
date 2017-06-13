@@ -5,6 +5,9 @@
       font-family: 'Spectral', serif;
       text-transform: uppercase;
       font-size: 1.3em;
+      @media #{$breakpoint-large} {
+        font-size: 2em;
+      }
     }
     i {
       font-size: 2em;
@@ -14,13 +17,23 @@
         color: white;
       }
     }
+
+    @media #{$breakpoint-large} {
+      a {
+        color: white;
+        font-family: "Oswald";
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+      }
+    }
   }
 
   .hero-text {
     i {
       font-size: 6em;
       @media #{$breakpoint-medium} {
-      font-size: 8em; 
+      font-size: 8em;
       }
     }
     h2 {
@@ -32,6 +45,9 @@
       @media #{$breakpoint-medium} {
         font-size: 1.2em;
       }
+      @media #{$breakpoint-large} {
+        font-size: 1.5em;
+      }
     }
     h1 {
       font-family: 'Spectral', serif;
@@ -41,6 +57,16 @@
       @media #{$breakpoint-medium} {
         font-size: 4.5em;
       }
+      @media #{$breakpoint-large} {
+        font-size: 7em;
+      }
+    }
+    button {
+      font-family: "Oswald";
+      text-transform: uppercase;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 1px;
     }
   }
 }

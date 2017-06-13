@@ -33,7 +33,7 @@
       @include position(absolute, 80% 0 0 40%);
       transform: translate(-50%, -50%);
       hr {
-        border: solid 2.5px #dc7725;
+        border: solid 2.5px $orange;
         width: 17%;
         margin: 10px 0;
       }
