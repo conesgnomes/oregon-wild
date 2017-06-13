@@ -410,4 +410,120 @@ template {
   display: none;
 }
 
+.header {
+  color: white;
+}
+.header .navbar h4 {
+  font-family: 'Spectral', serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+.header .navbar i {
+  font-size: 2em;
+}
+.header .navbar .logo img {
+  color: white;
+}
+.header .hero-text i {
+  font-size: 6em;
+}
+.header .hero-text h2 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.header .hero-text h1 {
+  font-family: 'Spectral', serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.header .navbar {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+.header .hero-text {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0;
+}
+.header .navbar ul {
+  display: none;
+}
+.header .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.header .navbar .logo img {
+  height: 30px;
+  width: 30px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.header .navbar .logo h4 {
+  padding-left: 10px;
+}
+.header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .hero-text img {
+  height: 60px;
+  width: 60px;
+  -webkit-filter: opacity(0.8);
+  filter: opacity(0.8);
+  margin-bottom: 25px;
+}
+.header .hero-text button {
+  display: none;
+}
+.header .hero-text i {
+  margin-bottom: 20px;
+  -webkit-filter: opacity(0.5);
+  filter: opacity(0.5);
+}
+.header .hero-text hr {
+  color: white;
+  border: 2px solid white;
+  width: 75%;
+  margin: 10px 0;
+}
+.header .hero-text h1 {
+  margin: 0;
+}
+.header .navbar2 {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

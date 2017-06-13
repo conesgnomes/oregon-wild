@@ -1,0 +1,64 @@
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 100%;
+    margin: 0;
+
+    ul {
+      display: none;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+      @include size(30px);
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      }
+      h4 {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      @include size(60px);
+      -webkit-filter: opacity(0.8);
+      filter: opacity(0.8);
+      margin-bottom: 25px;
+    }
+    button {
+      display: none;
+    }
+    i {
+      margin-bottom: 20px;
+      -webkit-filter: opacity(0.5);
+      filter: opacity(0.5);
+    }
+    hr {
+      color: white;
+      border: 2px solid white;
+      width: 75%;
+      margin: 10px 0;
+    }
+    h1 {
+      margin: 0;
+    }
+
+  }
+
+  .navbar2 {
+    display: none;
+  }
+}

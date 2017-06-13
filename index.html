@@ -2,16 +2,19 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Spectral:600,800" rel="stylesheet">
     <title>Arctic Wild</title>
   </head>
   <body>
     <div class="header">
       <div class="navbar">
-        <img src="img/pawprint.png" alt="Paw Print Logo" />
-        <h4>Oregon Wild</h4>
+        <div class="logo">
+          <img src="img/pawprint.png" alt="Paw Print Logo" />
+          <h4>Oregon Wild</h4>
+        </div>
         <i class="material-icons">menu</i>
         <ul>
           <li><a href="#">Schedule</a></li>
@@ -29,39 +32,52 @@
         <h1>Oregon Wild</h1>
         <hr>
         <i class="material-icons">play_circle_filled</i>
+        <button type="button" name="button">Explore Below</button>
       </div><!--end hero text div-->
+
+      <div class="navbar2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rafting</a></li>
+          <li><a href="#">Backpacking</a></li>
+          <li><a href="#">Canoe</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+        <input type="text" name="name" value="" placeholder="Search">
+        <i class="material-icons">search</i>
+      </div>
     </div><!--end header div-->
 
     <div class="body-container">
       <div class="img-card rafting">
-        <img src="" alt="" />
+        <img src="img/icon-raft.svg" alt="Raft Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Rafting Trips</h3>
       </div>
       <div class="img-card base-camp">
-        <img src="" alt="" />
+        <img src="img/icon-basecamp.svg" alt="Tent Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Base Camp Trips</h3>
       </div>
       <div class="img-card backpacking">
-        <img src="" alt="" />
+        <img src="img/icon-backpacking.svg" alt="Boots Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Backpacking Trips</h3>
       </div>
       <div class="img-card canoe">
-        <img src="" alt="" />
+        <img src="img/icon-canoe.svg" alt="Canoe Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Canoe Trips</h3>
       </div>
       <div class="img-card photography">
-        <img src="" alt="" />
+        <img src="img/icon-photography.svg" alt="Camera Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Photography Trips</h3>
       </div>
       <div class="img-card custom">
-        <img src="" alt="" />
+        <img src="img/icon-custom.svg" alt="Compass Icon" />
         <hr>
-        <h3>text</h3>
+        <h3>Custom Trips</h3>
       </div>
     </div><!--end body container div-->
   </body>

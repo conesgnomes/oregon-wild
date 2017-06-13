@@ -1,0 +1,11 @@
+.header {
+  @include grid-container;
+
+  .navbar{
+    @include grid-column(12);
+  }
+
+  .hero-text {
+    @include grid-column(12);
+  }
+}
