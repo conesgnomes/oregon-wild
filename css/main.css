@@ -427,6 +427,11 @@ template {
 .header .hero-text i {
   font-size: 6em;
 }
+@media only screen and (min-width: 760px) {
+  .header .hero-text i {
+    font-size: 8em;
+  }
+}
 .header .hero-text h2 {
   font-family: "Oswald";
   text-transform: uppercase;
@@ -434,11 +439,21 @@ template {
   letter-spacing: 3px;
   font-weight: 400;
 }
+@media only screen and (min-width: 760px) {
+  .header .hero-text h2 {
+    font-size: 1.2em;
+  }
+}
 .header .hero-text h1 {
   font-family: 'Spectral', serif;
   text-transform: uppercase;
   font-size: 2.5em;
   font-weight: 600;
+}
+@media only screen and (min-width: 760px) {
+  .header .hero-text h1 {
+    font-size: 4.5em;
+  }
 }
 
 .body-container .img-card h3 {
@@ -481,6 +496,18 @@ template {
   float: left;
   margin-left: 20px;
 }
+@media only screen and (min-width: 760px) {
+  .body-container .rafting, .body-container .custom {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+  }
+  .body-container .base-camp, .body-container .backpacking, .body-container .kayak, .body-container .photography {
+    width: calc(50%);
+    float: left;
+    margin-left: 0;
+  }
+}
 
 .header {
   background-image: url("../img/header-bg.jpg");
@@ -511,6 +538,11 @@ template {
 .header .navbar .logo h4 {
   padding-left: 10px;
 }
+@media only screen and (min-width: 760px) {
+  .header .navbar {
+    padding-top: 60px;
+  }
+}
 .header .hero-text {
   display: flex;
   justify-content: center;
@@ -535,8 +567,13 @@ template {
 .header .hero-text hr {
   color: white;
   border: 2px solid white;
-  width: 75%;
+  width: 65%;
   margin: 10px 0;
+}
+@media only screen and (min-width: 760px) {
+  .header .hero-text hr {
+    width: 40%;
+  }
 }
 .header .hero-text h1 {
   margin: 0;
@@ -574,6 +611,16 @@ template {
   height: 30px;
   width: 30px;
 }
+@media only screen and (min-width: 760px) {
+  .body-container .img-card .icon-bg {
+    height: 90px;
+    width: 90px;
+  }
+  .body-container .img-card .icon-bg img {
+    height: 40px;
+    width: 40px;
+  }
+}
 .body-container .img-card .card-text {
   position: absolute;
   top: 80%;
@@ -586,6 +633,23 @@ template {
   border: solid 2.5px #dc7725;
   width: 17%;
   margin: 10px 0;
+}
+@media only screen and (min-width: 760px) {
+  .body-container .img-card .card-text {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (min-width: 760px) {
+  .body-container .img-card {
+    margin: 0;
+    padding: 0;
+    height: 450px;
+  }
 }
 .body-container .rafting {
   background-image: url("../img/rafting.jpg");

@@ -9,7 +9,6 @@
     padding: 40px 20px;
     width: 100%;
     margin: 0;
-
     ul {
       display: none;
     }
@@ -24,6 +23,9 @@
       h4 {
         padding-left: 10px;
       }
+    }
+    @media #{$breakpoint-medium} {
+      padding-top: 60px;
     }
   }
 
@@ -49,8 +51,11 @@
     hr {
       color: white;
       border: 2px solid white;
-      width: 75%;
+      width: 65%;
       margin: 10px 0;
+      @media #{$breakpoint-medium} {
+        width: 40%;
+      }
     }
     h1 {
       margin: 0;

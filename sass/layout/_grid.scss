@@ -16,4 +16,12 @@
   .img-card {
     @include grid-column(12);
   }
+  @media #{$breakpoint-medium} {
+    .rafting, .custom {
+      @include grid-column(12, $custom-grid);
+    }
+    .base-camp, .backpacking, .kayak, .photography {
+      @include grid-column(6, $custom-grid);
+    }
+  }
 }

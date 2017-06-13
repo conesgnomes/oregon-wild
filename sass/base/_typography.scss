@@ -19,6 +19,9 @@
   .hero-text {
     i {
       font-size: 6em;
+      @media #{$breakpoint-medium} {
+      font-size: 8em; 
+      }
     }
     h2 {
       font-family: "Oswald";
@@ -26,12 +29,18 @@
       font-size: 0.9em;
       letter-spacing: 3px;
       font-weight: 400;
+      @media #{$breakpoint-medium} {
+        font-size: 1.2em;
+      }
     }
     h1 {
       font-family: 'Spectral', serif;
       text-transform: uppercase;
       font-size: 2.5em;
       font-weight: 600;
+      @media #{$breakpoint-medium} {
+        font-size: 4.5em;
+      }
     }
   }
 }
