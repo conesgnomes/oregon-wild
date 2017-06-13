@@ -1,9 +1,15 @@
 .body-container {
   background-color: #DADADA;
+  padding-bottom: 20px;
   .img-card {
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 45px;
     border-radius: 3px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
     .icon-bg {
       background-color: rgba(69, 69, 69, 0.8);
       @include size(60px);
@@ -12,8 +18,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      align-self: center;
       img {
         @include size(30px);
+      }
+    }
+    .card-text {
+      @include position(absolute, 80% 0 0 40%);
+      transform: translate(-50%, -50%);
+      hr {
+        border: solid 2.5px #dc7725;
+        width: 17%;
+        margin: 10px 0;
       }
     }
   }
@@ -21,7 +37,6 @@
     background-image: url("../img/rafting.jpg");
     background-size: cover;
     background-position: center;
-
   }
   .base-camp {
     background-image: url("../img/basecamp.jpg");

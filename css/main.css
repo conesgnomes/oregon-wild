@@ -441,6 +441,14 @@ template {
   font-weight: 600;
 }
 
+.body-container .img-card h3 {
+  color: white;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -539,11 +547,17 @@ template {
 
 .body-container {
   background-color: #DADADA;
+  padding-bottom: 20px;
 }
 .body-container .img-card {
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 45px;
   border-radius: 3px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 .body-container .img-card .icon-bg {
   background-color: rgba(69, 69, 69, 0.8);
@@ -554,10 +568,24 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 .body-container .img-card .icon-bg img {
   height: 30px;
   width: 30px;
+}
+.body-container .img-card .card-text {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  bottom: 0;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.body-container .img-card .card-text hr {
+  border: solid 2.5px #dc7725;
+  width: 17%;
+  margin: 10px 0;
 }
 .body-container .rafting {
   background-image: url("../img/rafting.jpg");
