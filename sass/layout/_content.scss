@@ -10,6 +10,9 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    @media #{$breakpoint-medium} {
+      border-radius: 0;
+    }
     .icon-bg {
       background-color: rgba(69, 69, 69, 0.8);
       @include size(60px);
@@ -34,7 +37,7 @@
       transform: translate(-50%, -50%);
       hr {
         border: solid 2.5px $orange;
-        width: 17%;
+        width: 40px;
         margin: 10px 0;
       }
       @media #{$breakpoint-medium} {
@@ -44,7 +47,6 @@
     }
     @media #{$breakpoint-medium} {
       margin: 0;
-      padding: 0;
       height: 450px;
     }
   }
@@ -66,7 +68,7 @@
   .kayak {
     background-image: url("../img/kayak.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
   .photography {
     background-image: url("../img/photography.jpg");

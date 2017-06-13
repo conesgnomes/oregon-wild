@@ -487,12 +487,36 @@ template {
   letter-spacing: 1px;
 }
 
+@media only screen and (min-width: 962px) {
+  .navbar2 a {
+    color: white;
+    font-family: "Oswald";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .navbar2 p {
+    color: #bdbdb7;
+    font-family: "Oswald";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .navbar2 i {
+    color: #868686;
+    font-size: 2em;
+  }
+}
+
 .body-container .img-card h3 {
   color: white;
   font-family: "Oswald";
   text-transform: uppercase;
   font-size: 1.4em;
   font-weight: 500;
+  text-shadow: 1px 1px 2px black;
 }
 
 * {
@@ -517,6 +541,12 @@ template {
   margin-left: 20px;
 }
 
+.navbar2 {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+}
+
 .body-container::after {
   clear: both;
   content: "";
@@ -535,6 +565,18 @@ template {
   }
   .body-container .base-camp, .body-container .backpacking, .body-container .kayak, .body-container .photography {
     width: calc(50%);
+    float: left;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 962px) {
+  .body-container .rafting, .body-container .custom {
+    width: calc(50%);
+    float: left;
+    margin-left: 0;
+  }
+  .body-container .base-camp, .body-container .backpacking, .body-container .kayak, .body-container .photography {
+    width: calc(25%);
     float: left;
     margin-left: 0;
   }
@@ -641,12 +683,38 @@ template {
     margin-top: 75px;
   }
 }
-.header .navbar2 {
-  display: none;
-}
 @media only screen and (min-width: 962px) {
   .header {
     height: 100vh;
+  }
+}
+
+.navbar2 {
+  display: none;
+}
+@media only screen and (min-width: 962px) {
+  .navbar2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    background-color: #323232;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .navbar2 ul {
+    padding: 20px 0;
+  }
+  .navbar2 ul li {
+    display: inline;
+    padding: 0 10px;
+  }
+  .navbar2 .search {
+    display: flex;
+    align-items: center;
+  }
+  .navbar2 .search p {
+    padding-right: 5px;
   }
 }
 
@@ -663,6 +731,11 @@ template {
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+@media only screen and (min-width: 760px) {
+  .body-container .img-card {
+    border-radius: 0;
+  }
 }
 .body-container .img-card .icon-bg {
   background-color: rgba(69, 69, 69, 0.8);
@@ -699,7 +772,7 @@ template {
 }
 .body-container .img-card .card-text hr {
   border: solid 2.5px #dc7725;
-  width: 17%;
+  width: 40px;
   margin: 10px 0;
 }
 @media only screen and (min-width: 760px) {
@@ -715,7 +788,6 @@ template {
 @media only screen and (min-width: 760px) {
   .body-container .img-card {
     margin: 0;
-    padding: 0;
     height: 450px;
   }
 }
@@ -737,7 +809,7 @@ template {
 .body-container .kayak {
   background-image: url("../img/kayak.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 .body-container .photography {
   background-image: url("../img/photography.jpg");

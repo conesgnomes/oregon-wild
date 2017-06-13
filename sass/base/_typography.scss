@@ -68,6 +68,31 @@
       font-size: 1em;
       letter-spacing: 1px;
     }
+  } // hero text
+} // header
+
+.navbar2 {
+  @media #{$breakpoint-large} {
+    a {
+      color: white;
+      font-family: "Oswald";
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    p {
+      color: #bdbdb7;
+      font-family: "Oswald";
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    i {
+      color: #868686;
+      font-size: 2em;
+    }
   }
 }
 
@@ -79,6 +104,7 @@
       text-transform: uppercase;
       font-size: 1.4em;
       font-weight: 500;
+      text-shadow: 1px 1px 2px black;
     }
   }
 }

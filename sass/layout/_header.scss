@@ -94,11 +94,34 @@
     }
   } //end hero-text
 
-  .navbar2 {
-    display: none;
-  }
-
   @media #{$breakpoint-large} {
     height: 100vh;
   }
 } //end header
+
+.navbar2 {
+  display: none;
+  @media #{$breakpoint-large} {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    background-color: #323232;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    ul {
+      padding: 20px 0;
+      li {
+        display: inline;
+        padding: 0 10px;
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      p {
+        padding-right: 5px;
+      }
+    }
+  }
+}
