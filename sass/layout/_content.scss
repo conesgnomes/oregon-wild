@@ -1,0 +1,51 @@
+.body-container {
+  background-color: #DADADA;
+  .img-card {
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 300px;
+    .icon-bg {
+      background-color: rgba(69, 69, 69, 0.8);
+      @include size(60px);
+      padding: 20px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        @include size(30px);
+      }
+    }
+  }
+  .rafting {
+    background-image: url("../img/rafting.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+  .base-camp {
+    background-image: url("../img/basecamp.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .backpacking {
+    background-image: url("../img/backpacking.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .kayak {
+    background-image: url("../img/kayak.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .photography {
+    background-image: url("../img/photography.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .custom {
+    background-image: url("../img/custom.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}

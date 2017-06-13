@@ -463,6 +463,17 @@ template {
   margin-left: 20px;
 }
 
+.body-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.body-container .img-card {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+
 .header {
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
@@ -524,6 +535,59 @@ template {
 }
 .header .navbar2 {
   display: none;
+}
+
+.body-container {
+  background-color: #DADADA;
+}
+.body-container .img-card {
+  margin-top: 20px;
+  border-radius: 3px;
+  height: 300px;
+}
+.body-container .img-card .icon-bg {
+  background-color: rgba(69, 69, 69, 0.8);
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-container .img-card .icon-bg img {
+  height: 30px;
+  width: 30px;
+}
+.body-container .rafting {
+  background-image: url("../img/rafting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.body-container .base-camp {
+  background-image: url("../img/basecamp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.body-container .backpacking {
+  background-image: url("../img/backpacking.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.body-container .kayak {
+  background-image: url("../img/kayak.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.body-container .photography {
+  background-image: url("../img/photography.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.body-container .custom {
+  background-image: url("../img/custom.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */

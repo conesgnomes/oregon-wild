@@ -9,3 +9,11 @@
     @include grid-column(12);
   }
 }
+
+.body-container {
+  @include grid-container;
+
+  .img-card {
+    @include grid-column(12);
+  }
+}
